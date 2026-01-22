@@ -36,6 +36,8 @@ def number_to_roman(number:int) -> str:
         if number == 0:
             break
         count = number // value
+        
+        # if count > 0:
         if count:
             result.append(symbol * count)
             number -= value * count
